@@ -32,24 +32,29 @@ namespace DDDCinema.Scheduling
             return null;
         }
 
-        public override bool Equals(object obj)
-        {           
+        public bool Equals(TimePeriod another)
+        {
             return false;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return Equals(obj as TimePeriod);
         }
 
         public override int GetHashCode()
         {
-            return 0;
+            return 13 * Start.GetHashCode() + End.GetHashCode();
         }
 
         public static bool operator ==(TimePeriod period1, TimePeriod period2)
         {
-            return false;
+            return period1?.Equals(period2) ?? false;
         }
 
         public static bool operator !=(TimePeriod period1, TimePeriod period2)
         {
-            return false;
+            return !(period1 == period2);
         }
     }
 }
