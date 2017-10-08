@@ -40,12 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMovieRepository.cs" />
-    <Compile Include="IRoomRepository.cs" />
-    <Compile Include="IScheduleRepository.cs" />
+    <Compile Include="Infrastructure\IMovieRepository.cs" />
+    <Compile Include="Infrastructure\IRoomRepository.cs" />
+    <Compile Include="Infrastructure\IScheduleRepository.cs" />
     <Compile Include="OpeningHours.cs" />
     <Compile Include="Schedule.cs" />
-    <Compile Include="SchedulingService.cs" />
+    <Compile Include="Infrastructure\SchedulingService.cs" />
     <Compile Include="Show.cs" />
     <Compile Include="Week.cs" />
     <Compile Include="Movie.cs" />

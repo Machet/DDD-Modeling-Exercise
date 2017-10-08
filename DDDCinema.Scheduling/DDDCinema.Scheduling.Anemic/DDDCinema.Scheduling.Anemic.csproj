@@ -40,9 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICurrentWeekProvider.cs" />
-    <Compile Include="IMovieRepository.cs" />
-    <Compile Include="IScheduleRepository.cs" />
+    <Compile Include="Infrastructure\ICurrentWeekProvider.cs" />
+    <Compile Include="Infrastructure\IMovieRepository.cs" />
+    <Compile Include="Infrastructure\IScheduleRepository.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
