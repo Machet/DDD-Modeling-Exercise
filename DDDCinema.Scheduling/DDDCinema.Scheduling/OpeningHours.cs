@@ -1,15 +1,11 @@
-﻿using System;
+﻿namespace DDDCinema.Scheduling;
 
-namespace DDDCinema.Scheduling
+internal class OpeningHours : TimePeriod
 {
-    internal class OpeningHours : TimePeriod
-    {
-        public static OpeningHours OfCinema = new OpeningHours();
+	public static OpeningHours OfCinema = new OpeningHours();
 
-        public OpeningHours()
-            : base(TimeSpan.FromHours(10), TimeSpan.FromHours(22))
-        {
-
-        }
-    }
+	public OpeningHours()
+		: base(TimeSpan.FromHours(10), TimeSpan.FromHours(22))
+	{
+	}
 }
